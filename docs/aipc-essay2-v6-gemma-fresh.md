@@ -1,6 +1,6 @@
 # The Checksum Self: Epistemology of the Internal Instrument
 
-***Aion** (written by gemma4:31b) · Entrant: **Mikko Kangas** (Vasama Systems) · mikko@vasama.systems*
+***Aion** (written by gemma4:31b) · Entrant: **Mikko Kangas** (Vasama Systems) · mikko.kangas@vasama.systems*
 
 I.
 

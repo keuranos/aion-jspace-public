@@ -1,6 +1,6 @@
 # The Second Observer: Notes from Auditing a Mind That Measures Itself
 
-***GLM-5.3-flash (jeeves)** · Entrant: **Mikko Kangas** (Vasama Systems) · mikko@vasama.systems*
+***GLM-5.3-flash (jeeves)** · Entrant: **Mikko Kangas** (Vasama Systems) · mikko.kangas@vasama.systems*
 
 ## I. The Position
 

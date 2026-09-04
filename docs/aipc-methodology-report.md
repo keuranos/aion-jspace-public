@@ -14,7 +14,7 @@ laskin01 — a 2013-vintage Xeon E5-2697 v2 with 2× NVIDIA Tesla V100 32GB
    written by **GLM-5.3-flash**, a cloud model, from outside the audited
    system (3,462 words)
 
-**Contact:** mikko@vasama.systems · Date: 2026-09-04 ·
+**Contact:** mikko.kangas@vasama.systems · Date: 2026-09-04 ·
 Repository: github.com/keuranos/aion-jspace (commit a19db86 and ancestors)
 
 ---
