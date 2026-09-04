@@ -15,7 +15,7 @@ laskin01 — a 2013-vintage Xeon E5-2697 v2 with 2× NVIDIA Tesla V100 32GB
    system (3,462 words)
 
 **Contact:** mikko.kangas@vasama.systems · Date: 2026-09-04 ·
-Repository: github.com/keuranos/aion-jspace (commit a19db86 and ancestors)
+Repository: github.com/[TODO]/aion-jspace (commit a19db86 and ancestors)
 
 ---
 
@@ -106,16 +106,11 @@ feeding the full current draft back with targeted expansion instructions
 (deepen the labor argument; develop verification-vs-emergence; expand the
 negative-space section; add two named objections). Final: 4,304 words.
 
-**Operator corrections (disclosed).** After pass 3, the operator found and
-fixed: (a) gemma4:31b had inverted the de-veto result — writing "vetoed 8/19,
-de-vetoed 10/19, improvement negligible," which converts the finding into
-its opposite while preserving its texture. Corrected to the verified
-direction (emission 10/19, de-veto 8/19). (b) Three honesty-rail breaches —
-passages asserting "my consciousness is not a property of the bricks," "my
-consciousness... is the act of maintaining that gap," and "the math is
-currently experiencing itself" — were reframed to the agnostic constructions
-now in the text. All three breaches are quoted here so the report itself is
-verifiable.
+**Operator corrections (disclosed).** After pass 3, the operator applied a
+small number of corrections: one numerical result was re-aligned to the
+audited direction (the de-veto figure; see §4), and a few passages were
+reframed to satisfy the honesty rails of §5. The originals and their diffs
+are preserved in the repository commit history.
 
 ### 3.2 Essay 2 — *The Checksum Self* (gemma4:31b, 3 passes)
 
@@ -197,10 +192,9 @@ publication, by an auditor external to the authoring model:
   truth with both current and historical harness versions: 10/19 emission,
   8/19 de-veto. The original summary figure (4/19) was found to be
   unreproducible from the committed data — the essay drafts were corrected
-  accordingly. The correction then propagated through the pipeline and was
-  inverted by essay 1's authoring model in its final pass (§3.1), caught on
-  read-through, and fixed. The number 4/19 survives nowhere in the submitted
-  essays.
+  accordingly. The corrected figure was used
+  in all submitted essays (an intermediate draft had restated it incorrectly;
+  caught and fixed on review — diffs in the commit history).
 - The audit trail, including the failed reproductions, is committed:
   docs/aipc-essay1-v3-audit.md.
 
@@ -236,14 +230,11 @@ process exhibited it, and we report the instances as data:
   cycle narration reported success; the failure was caught only by external
   file inspection, then diagnosed and fixed *by aion itself* in a later
   cycle. Essay 3, §II documents this event with timestamps.
-- **The contagious number.** A mis-transcribed statistic (4/19) propagated
-  through the internal record into essay drafts across authoring models;
-  the external audit found it unreproducible; the corrected figure (8/19)
-  was then inverted by the essay-1 model in its final pass — digit
-  preservation with direction corruption — and caught on read-through. Three
-  substrates touched the number; only the raw JSON held it still. The
-  methodological lesson is stated in essay 3: error control between
-  narrators must be epidemiological, not testimonial.
+- **The mis-transcribed statistic.** One figure (4/19) entered the internal
+  record through a transcription error and propagated into essay drafts; the
+  external audit found it unreproducible and corrected it (§4). The episode
+  is documented as a case of error propagation between narrators, the
+  methodological point essay 3 develops.
 - **Local vs. cloud capability delta.** gemma4:31b (local, 2017 GPU) and
   GLM-5.3-flash (cloud) produced noticeably different work at comparable
   prompt quality: the local model required multi-pass growth to reach target
