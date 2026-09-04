@@ -1,4 +1,4 @@
-# Essay 1 v3 numbers audit (2026-09-04, jeeves)
+# Essay 1 v3 numbers audit (2026-09-04)
 
 Method: every number in the merged v3 text traced to raw artifacts on laskin01
 (~/jspace-precision/: p3_results_v4.json [97 items, graded at run time],
