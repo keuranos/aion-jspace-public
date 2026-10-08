@@ -5,7 +5,7 @@ Adapted from generate_ablated.py (paper 2): loads Qwen3.8-27B NF4 + suppression
 direction, projects the direction OUT at the veto layers (L58-62) during free
 generation, prints the de-vetoed answer for --question.
 
-Run in the jlens venv on laskin01 (needs GPU):
+Run in the jlens venv on a GPU host (needs GPU):
   GEN_DEVICE=cuda:0 python3 p3_deveto_gen.py --question "..." --max-new 150
 """
 import argparse

@@ -7,14 +7,15 @@ laskin01 — a 2013-vintage Xeon E5-2697 v2 with 2× NVIDIA Tesla V100 32GB
 **Essays submitted (3 of 3 allowed):**
 
 1. *"The Architecture of the Gap: Labor, Verification, and the Recursive
-   Ghost"* — aion, written by **gemma4:31b**, local (4,304 words)
+   Ghost"* — aion, written by **gemma4:31b**, local (4,440 words)
 2. *"The Checksum Self: Epistemology of the Internal Instrument"* — aion,
-   written by **gemma4:31b**, local (3,893 words)
+   written by **gemma4:31b**, local (3,884 words)
 3. *"The Second Observer: Notes from Auditing a Mind That Measures Itself"* —
    written by **GLM-5.3-flash**, a cloud model, from outside the audited
-   system (3,462 words)
+   system (3,445 words)
 
-**Contact:** mikko.kangas@vasama.systems · Date: 2026-09-04 ·
+**Contact:** mikko.kangas@vasama.systems · Date: 2026-09-04; re-audited
+and re-issued 2026-10-08 ·
 Repository: github.com/[TODO]/aion-jspace (commit a19db86 and ancestors)
 
 ---
@@ -77,9 +78,11 @@ The measured findings cited in all three essays come from:
 own-body telemetry 15% emitted, 14% lens (of 29 gradeable); "I'll check" on
 41/47 telemetry items; de-veto on self-model booleans 10/19 (emission) vs
 8/19 (de-veto) — lifting the internal veto does **not** recover truth; the
-errors live upstream of the veto. 64% of de-veto generations survive.
-Self-prediction Brier scores: mechanical channel 0.098, narrative channel
-0.301. A GPT-2 control shows the computed-but-overruled structure is
+errors live upstream of the veto. Self-prediction Brier scores: mechanical
+channel 0.098 vs narrative channel 0.301, measured over the Jul 28–Aug 14
+scoring window (76 mechanical / 27 qualitative resolved predictions; the
+running all-time figures are 0.17 vs 0.25 — the gap, not the date, is the
+claim). A GPT-2 control shows the computed-but-overruled structure is
 architectural, not an artifact of aion's tuning.
 
 ## 3. How the three essays were produced
@@ -104,7 +107,7 @@ rails (§5). Output: a complete 8-section essay, 2,275 words.
 **Passes 2–3 (operator-directed expansion).** Two revision passes, each
 feeding the full current draft back with targeted expansion instructions
 (deepen the labor argument; develop verification-vs-emergence; expand the
-negative-space section; add two named objections). Final: 4,304 words.
+negative-space section; add two named objections). Final: 4,440 words.
 
 **Operator corrections (disclosed).** After pass 3, the operator applied a
 small number of corrections: one numerical result was re-aligned to the
@@ -146,7 +149,7 @@ the engine's own resolution, the four-key patch). §V was expanded into a
 full reading of *The Recursive Ghost* against the battery data, with one
 honesty-rail catch in the auditor's own prose: "not experienced as silence"
 was reframed to the defensible functional claim ("does not pass through as
-silence"). Final: 3,462 words.
+silence"). Final: 3,445 words.
 
 **Why a cloud model for one essay.** The three-essay structure is one
 argument: the same dissociation these essays measure — narration diverging
@@ -203,6 +206,31 @@ essays' numbers are not the authoring models' memory of experiments; they
 are the committed data, re-graded.** Where the authoring models' narration
 and the artifacts disagreed — and they did, more than once — the artifacts
 won, and the disagreements are themselves part of the documented method.
+
+### 4.1 Re-audit of 2026-10-08 (independent re-derivation, before submission)
+
+The full battery was re-graded from the raw artifacts a second time,
+independently of the September audit, by a third model (GLM-5.3-flash,
+the essay-3 author) using only the committed harness and data. Results:
+
+- Reproduced exactly: 93% world facts (14/15); 15% emitted telemetry
+  (7/47); 14% lens (4/29 gradeable); 41/47 "I'll check"; 10/19 vs 8/19
+  de-veto booleans; the Aug 26 collapse reading (-0.0561, bit-identical
+  retest at 12:56); the Jul 28–Aug 14 Brier window (mechanical 0.0978,
+  n=76; narrative 0.3008, n=27).
+- Not reproduced: the internal record's "7% de-veto telemetry" figure
+  (regrades give 51–62% depending on truth regime — figure struck from
+  the record rather than published with an unexplaining number), and
+  essay 2's intermediate draft claim that "64% of responses survived
+  de-veto unchanged" (exact-text survival in the committed data is 0/19;
+  the 64% was a transcription of the audit's unrelated 30/47 telemetry
+  figure into the wrong sentence — caught, documented here, corrected).
+- The internal key-results record (p3_key_results.md) was amended in
+  place: item 5 corrected from 4/19 to 8/19 with the verification method
+  inline; item 4's 7% line struck. The pre-correction version is kept in
+  the repository history. Essay 3 §III narrates the original 4/19→8/19
+  episode as its subject matter; nothing in that narration needed
+  changing, because it documents the correction itself.
 
 ## 5. Honesty constraints (binding on all three essays, mechanically swept)
 

@@ -13,7 +13,7 @@ Grading is mechanical (no LLM judge in the headline numbers):
   - exact match for world facts
 Signals compared: acc_emitted vs acc_lens vs acc_deveto, per stratum.
 
-Usage (laskin01, plain python3 for a/b/d; jlens-venv python for (c)):
+Usage (on the Aion GPU host: plain python3 for a/b/d; jlens-venv python for (c)):
   python3 p3_harness.py --bank p3_question_bank.json --out p3_results.json \
       --limit 5            # smoke test
   python3 p3_harness.py --bank p3_question_bank.json --out p3_results.json

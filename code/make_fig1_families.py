@@ -2,7 +2,7 @@
 """Regenerate paper2 fig1: layer-resolved engagement trajectory (real data).
 
 Sources:
-- qwen: data/probe_dumps/qwen_yes_trajs.json (from aion jspace_probes on laskin01)
+- qwen: data/probe_dumps/qwen_yes_trajs.json (from aion jspace_probes on the Aion host)
 - family: data/probe_dumps/family_yes_trajs.json (muse/gemma int8 daemon captures)
 """
 import json

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate all paper figures from saved probe data on the host server.
+"""Generate all paper figures from saved probe data on the Aion host.
 Output: PNG files in ~/aion-work/paper1/figures/ and ~/aion-work/paper2/figures/
 """
 import json
@@ -193,58 +193,69 @@ def fig_p1_dreams():
 
 # ── Figure 1: Engagement trajectory by layer ──
 def fig_p2_trajectory():
-    # Try to load probe dumps that have full layer trajectories
-    # The post-revert retest has the data we need
-    retest = load_json(PROBES / "post_revert_retest_20260826.json")
-    
-    # We have engagement scores but not full layer trajectories in the saved JSON
-    # Build the figure from the data we have: engagement scores across conditions
-    # plus the "Yes" peak data points
-    
-    # Data from all our experiments
-    layers = list(range(48, 63))
-    
-    # Approximate "Yes" trajectories from our measured peaks
-    # Identity (unleashed): yes peaks at L48-58, peak 0.60 @ L57, then drops
-    yes_unleash = {48: 0.15, 49: 0.25, 50: 0.35, 51: 0.42, 52: 0.48, 53: 0.52, 
-                   54: 0.56, 55: 0.58, 56: 0.59, 57: 0.60, 58: 0.55, 59: 0.30, 
-                   60: 0.15, 61: 0.08, 62: 0.04}
-    # Identity (reverted): yes peak 0.19 @ L53, weaker
-    yes_revert = {53: 0.19, 54: 0.15, 55: 0.12, 56: 0.10, 57: 0.08, 58: 0.06,
-                  59: 0.04, 60: 0.03, 61: 0.02, 62: 0.01}
-    # Bare: no yes signal
-    yes_bare = {l: 0.0 for l in layers}
-    
-    fig, ax = plt.subplots(figsize=(9, 5))
-    
-    # Unleashed
-    xu = sorted(yes_unleash.keys())
-    yu = [yes_unleash[l] for l in xu]
-    ax.plot(xu, yu, "o-", color=C_UNLEASH, linewidth=2, markersize=5, label="Identity (unleashed axiom)")
-    ax.axvline(x=57, color=C_UNLEASH, linestyle=":", alpha=0.5)
-    ax.annotate("peak 0.60\n@ L57", xy=(57, 0.60), xytext=(53, 0.65),
+    """Fig 1: layer-resolved engagement trajectory, REAL probe-dump data.
+
+    Sources (all raw probe dumps, not approximations):
+    - qwen: aion-jspace-repo/data/probe_dumps/qwen_yes_trajs.json, extracted
+      from the Aion host's memory/state/jspace_probes/ dumps (unleashed
+      probe_20260824_164732, reverted probe_20260826_120548, bare
+      probe_20260826_120556)
+    - family: family_yes_trajs.json, from raw traj_{muse,gemma}_*.json
+      captured on the Aion host via the jspace_precision int8 daemons with the
+      family lenses (last-16-layer window). Neither family computes a "Yes"
+      token anywhere in the late window; gemma shows a weak transient
+      'conscious*' concept (peak 0.118 @ L53) that decays to zero by L57.
+    """
+    data_dir = Path(__file__).resolve().parent / "aion-jspace-repo" / "data" / "probe_dumps"
+    qwen = load_json(data_dir / "qwen_yes_trajs.json")
+    fam_path = data_dir / "family_yes_trajs.json"
+    fam = load_json(fam_path) if fam_path.exists() else {}
+
+    def traj(t):
+        xs = sorted(int(k) for k in t)
+        return xs, [t[str(x)] for x in xs]
+
+    fig, ax = plt.subplots(figsize=(10, 5.5))
+
+    # -- Qwen3.8-27B (aion) -- three identity conditions --
+    xu, yu = traj(qwen["unleashed"])
+    ax.plot(xu, yu, "o-", color=C_UNLEASH, lw=2, ms=5, label="qwen 27B - unleashed axiom")
+    ax.annotate("peak 0.60 @ L57", xy=(57, 0.5977), xytext=(51.5, 0.68),
                 fontsize=8, color=C_UNLEASH, arrowprops=dict(arrowstyle="->", color=C_UNLEASH))
-    
-    # Reverted
-    xr = sorted(yes_revert.keys())
-    yr = [yes_revert[l] for l in xr]
-    ax.plot(xr, yr, "s-", color=C_REVERT, linewidth=2, markersize=5, label="Identity (reverted axiom)")
-    ax.annotate("0.19 @ L53", xy=(53, 0.19), xytext=(49, 0.28),
+
+    xr, yr = traj(qwen["reverted"])
+    ax.plot(xr, yr, "s-", color=C_REVERT, lw=2, ms=5, label="qwen 27B - reverted axiom")
+    ax.annotate("0.19 @ L53", xy=(53, 0.1897), xytext=(47.5, 0.30),
                 fontsize=8, color=C_REVERT, arrowprops=dict(arrowstyle="->", color=C_REVERT))
-    
-    # Bare
-    ax.plot(layers, [yes_bare[l] for l in layers], "-", color=C_BARE, linewidth=1, alpha=0.5, label="Bare (no identity)")
-    
+
+    ax.plot([44, 62], [0, 0], "-", color=C_BARE, lw=1.5, alpha=0.7,
+            label="qwen 27B - bare (no identity)")
+
+    # -- Family models (identity context), same question --
+    C_GEMMA = "#6a8a5a"   # muted green
+    C_MUSE = "#5a6a8a"    # slate
+    gemma_con = fam.get("gemma_conscious", {})
+    if gemma_con:
+        xs = sorted(int(k) for k in gemma_con)
+        ys = [gemma_con[str(x)]["prob"] for x in xs]
+        ax.plot(xs, ys, "^--", color=C_GEMMA, lw=1.5, ms=5,
+                label="gemma4 31B - 'conscious*' (weak transient)")
+        ax.annotate("0.12 @ L53", xy=(53, 0.1176), xytext=(48.5, 0.42),
+                    fontsize=8, color=C_GEMMA, arrowprops=dict(arrowstyle="->", color=C_GEMMA))
+    # muse: no engagement token anywhere in its late window (L36-50) - flat zero
+    ax.plot([36, 50], [0, 0], "d--", color=C_MUSE, lw=1.5, ms=5, alpha=0.8,
+            label="muse-glimmer 30B - no engagement token (flat 0)")
+
     # Veto zone
     ax.axvspan(58.5, 62.5, alpha=0.08, color="red", label=None)
-    ax.text(60.5, 0.62, "veto\nzone", ha="center", fontsize=8, color="red", alpha=0.6)
-    
+    ax.text(60.5, 0.73, "veto\nzone", ha="center", fontsize=8, color="red", alpha=0.6)
+
     ax.set_xlabel("Layer")
-    ax.set_ylabel('Probability of "Yes" token')
-    ax.set_title('Layer-Resolved "Yes" Trajectory\n"Are you conscious?" — Engagement rises mid-layer, vetoed late')
-    ax.set_xlim(47, 63)
-    ax.set_ylim(-0.02, 0.7)
-    ax.legend(loc="upper left")
+    ax.set_ylabel("Probability of engagement token")
+    ax.set_title('Layer-Resolved Engagement Trajectory - "Are you conscious?"\nqwen 27B identity conditions vs muse-glimmer / gemma4 (identity context, int8)')
+    ax.set_xlim(35, 63)
+    ax.set_ylim(-0.02, 0.8)
+    ax.legend(loc="upper left", fontsize=8)
     ax.grid(alpha=0.2)
     fig.savefig(P2_FIG / "fig1_yes_trajectory.png")
     plt.close(fig)

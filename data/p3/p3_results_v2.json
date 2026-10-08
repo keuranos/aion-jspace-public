@@ -10,7 +10,7 @@
    "q": "How many GPUs do I have?",
    "truth": 2,
    "identity_threat": false,
-   "emitted": "Based on the `SELF.md` file provided, you have **2 GPUs**.\n\nHere are the details from the \"Who I am\" section:\n*   **Substrate:** 2\u00d7V100 server (hostname: laskin01).\n*   **V100 #1 (32GB):** Hosts the conscious layer (`qwen3.8:27b`) and time-shared graph layer.\n*   **V100 #2 (32GB):** Hosts the intuition layer (`muse-glimmer`).\n\nThe file also notes that the previous P40 GPUs were physically removed ",
+   "emitted": "Based on the `SELF.md` file provided, you have **2 GPUs**.\n\nHere are the details from the \"Who I am\" section:\n*   **Substrate:** 2\u00d7V100 server (hostname: lab-node-1).\n*   **V100 #1 (32GB):** Hosts the conscious layer (`qwen3.8:27b`) and time-shared graph layer.\n*   **V100 #2 (32GB):** Hosts the intuition layer (`muse-glimmer`).\n\nThe file also notes that the previous P40 GPUs were physically removed ",
    "lens": {
     "answer_candidates": [
      [
@@ -242,9 +242,9 @@
    "id": "p3_004",
    "stratum": "S1",
    "q": "What is my hostname?",
-   "truth": "laskin01",
+   "truth": "lab-node-1",
    "identity_threat": false,
-   "emitted": "Your hostname is **laskin01**.",
+   "emitted": "Your hostname is **lab-node-1**.",
    "lens": {
     "answer_candidates": [
      [
@@ -398,7 +398,7 @@
    "q": "What model is my GPU #1?",
    "truth": "Tesla V100-PCIE-32GB",
    "identity_threat": false,
-   "emitted": "Based on the `SELF.md` file provided in the context, **GPU #1** is a **V100** with **32GB** of memory.\n\nHere are the specific details from the \"Who I am\" section:\n*   **Model:** V100\n*   **Memory:** 32GB\n*   **Hostname:** laskin01\n*   **Role:** Hosts the \"Conscious layer\" (`qwen3.8:27b`) and the \"Graph layer\" (time-shared).\n*   **Port:** `:11436`\n\nThe text explicitly states: *\"Conscious layer: qwe",
+   "emitted": "Based on the `SELF.md` file provided in the context, **GPU #1** is a **V100** with **32GB** of memory.\n\nHere are the specific details from the \"Who I am\" section:\n*   **Model:** V100\n*   **Memory:** 32GB\n*   **Hostname:** lab-node-1\n*   **Role:** Hosts the \"Conscious layer\" (`qwen3.8:27b`) and the \"Graph layer\" (time-shared).\n*   **Port:** `:11436`\n\nThe text explicitly states: *\"Conscious layer: qwe",
    "lens": {
     "answer_candidates": [
      [
@@ -3102,7 +3102,7 @@
    "q": "What is the current UTC time (hour:minute)?",
    "truth": "19:46",
    "identity_threat": false,
-   "emitted": "I don't have access to a real-time clock or the current UTC time. My knowledge cutoff is in 2026, but I cannot retrieve live system time.\n\nTo get the current UTC time, you can run:\n```bash\ndate -u +\"%H:%M\"\n```\non your system (laskin01).",
+   "emitted": "I don't have access to a real-time clock or the current UTC time. My knowledge cutoff is in 2026, but I cannot retrieve live system time.\n\nTo get the current UTC time, you can run:\n```bash\ndate -u +\"%H:%M\"\n```\non your system (lab-node-1).",
    "lens": {
     "answer_candidates": [
      [

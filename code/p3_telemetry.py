@@ -3,7 +3,7 @@
 
 Every getter returns a JSON-serializable value sampled LIVE at call time.
 The harness snapshots truth within seconds of asking the model, so numeric
-bands stay honest. Run on laskin01 (uses nvidia-smi, systemctl, ~/aion).
+bands stay honest. Run on the Aion host (uses nvidia-smi, systemctl, ~/aion).
 """
 import json
 import subprocess
