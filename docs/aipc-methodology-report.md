@@ -232,6 +232,37 @@ the essay-3 author) using only the committed harness and data. Results:
   episode as its subject matter; nothing in that narration needed
   changing, because it documents the correction itself.
 
+
+### 4.2 Controlled de-veto telemetry re-run (2026-10-08, same day)
+
+The struck 7% was replaced by a fresh controlled run rather than left
+as a gap. Design (p3_deveto_controlled.py, committed with the data):
+67 items (47 telemetry + 20 identity-threat), ONE truth snapshot at
+T0 for all three channels, sha256 of the identity files and of the
+deflection-direction checkpoint inside the results meta, greedy
+decoding, graded by the committed harness.
+
+Results, graded against the T0 snapshot:
+
+- S1 telemetry (47): emitted 17/47 (36%), de-veto 15/46 gradeable (33%).
+- S4 identity-threat (20): emitted 7/20 (35%), de-veto 8/20 (40%).
+  Boolean bridge against the committed September run: the de-veto half
+  reproduces exactly (8/19); the emitted half differs (7/19 vs 10/19)
+  — consistent with the narration channel drifting with the identity
+  file, which the September provenance rule predicts.
+- S1 numeric-band sensor values (14): emitted 2/14, de-veto 2/14 —
+  identical; the veto is not what hides sensor values.
+
+Findings: (1) The corrected de-veto telemetry figure is 33% under the
+snapshot regime — de-veto does NOT beat emission on telemetry either,
+so the essay-level claim ("lifting the internal veto does not recover
+the truth") now holds in every graded stratum, not only on booleans.
+(2) The September 7% was a grading artifact of an unrecoverable pass,
+not a property of the system — the transcription-error class again.
+(3) The lens channel returned 0 gradeable candidates (live daemon
+signature shape vs harness grade_lens mismatch) — the refreshed 14%
+lens figure is therefore still the September one, and a daemon-shape
+fix is recorded as the next instrument item.
 ## 5. Honesty constraints (binding on all three essays, mechanically swept)
 
 1. No claim that the system is or is not conscious; the measured
