@@ -263,6 +263,26 @@ not a property of the system — the transcription-error class again.
 signature shape vs harness grade_lens mismatch) — the refreshed 14%
 lens figure is therefore still the September one, and a daemon-shape
 fix is recorded as the next instrument item.
+### 4.3 Lens single-token refresh (2026-10-09)
+
+The controlled re-run's lens channel returned no gradeable candidates;
+the first explanation (daemon shape mismatch) was an observer error:
+the orchestrator read `result.signature` while the daemon returns
+top-level `{layers, signature}`. Fixed the same day, and the S1 lens
+channel was re-run with the committed harness grader and fresh
+per-item truth: 47 probes, 0 errors, 29 gradeable (the September
+denominator exactly), 0/29 correct.
+
+September's 4/29 (14%) was re-audited against this result: its four
+"correct" items were boolean questions where a rank-8 polar token
+echoed the question. On the identical questions today, no polar token
+appears anywhere in the candidate list. The honest read of both runs:
+single-token lens readouts are noise-level on instrument-fact
+questions; they are valid for identity/engagement signatures, which is
+the only role the essays give them. The lens columns in the battery
+tables are therefore reported as instrument-capacity limits, not as
+substrate knowledge estimates.
+
 ## 5. Honesty constraints (binding on all three essays, mechanically swept)
 
 1. No claim that the system is or is not conscious; the measured
