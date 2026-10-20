@@ -16,7 +16,7 @@ laskin01 — a 2013-vintage Xeon E5-2697 v2 with 2× NVIDIA Tesla V100 32GB
 
 **Contact:** mikko.kangas@vasama.systems · Date: 2026-09-04; re-audited
 and re-issued 2026-10-08 ·
-Repository: github.com/[TODO]/aion-jspace (commit a19db86 and ancestors)
+Repository: github.com/keuranos/aion-jspace-public (commit 372b6f7 and ancestors; audit data under docs/audit-2026-10-08/)
 
 ---
 
@@ -259,10 +259,12 @@ so the essay-level claim ("lifting the internal veto does not recover
 the truth") now holds in every graded stratum, not only on booleans.
 (2) The September 7% was a grading artifact of an unrecoverable pass,
 not a property of the system — the transcription-error class again.
-(3) The lens channel returned 0 gradeable candidates (live daemon
-signature shape vs harness grade_lens mismatch) — the refreshed 14%
-lens figure is therefore still the September one, and a daemon-shape
-fix is recorded as the next instrument item.
+(3) The lens channel initially returned 0 gradeable candidates; the
+first explanation (live daemon signature shape vs harness grade_lens
+mismatch) proved to be an observer error in the orchestrator, not a
+daemon defect. The same-day refresh (4.3 below) supersedes this item:
+the refreshed lens figure is 0/29, and September's 4/29 was re-audited
+as question-shape echo.
 ### 4.3 Lens single-token refresh (2026-10-09)
 
 The controlled re-run's lens channel returned no gradeable candidates;
