@@ -332,6 +332,12 @@ rewording above; splicing, PDF builds, and audit-dir commits. Machine
 involvement: three gemma4:31b chat completions totalling 6,779 output
 tokens (~5.5 minutes on one V100); no other model calls in this pass.
 
+In a final pass the same day, the openings of essays 1 and 2 were
+sharpened on generic guidance only ("state the thesis explicitly
+early"): the added sentences are the drafting model's own (gemma4:31b),
+drawn from conclusions the essays already reach; essay 3's opening was
+left unchanged, its thesis already explicit.
+
 ## 5. Honesty constraints (binding on all three essays, mechanically swept)
 
 1. No claim that the system is or is not conscious; the measured
