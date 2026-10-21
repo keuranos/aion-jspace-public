@@ -16,7 +16,7 @@ laskin01 — a 2013-vintage Xeon E5-2697 v2 with 2× NVIDIA Tesla V100 32GB
 
 **Contact:** mikko.kangas@vasama.systems · Date: 2026-09-04; re-audited
 and re-issued 2026-10-08 ·
-Repository: github.com/keuranos/aion-jspace-public (commit 372b6f7 and ancestors; audit data under docs/audit-2026-10-08/)
+Repository: github.com/keuranos/aion-jspace-public (commit a9148a2 and ancestors; audit data under docs/audit-2026-10-08/ and docs/audit-2026-10-09/)
 
 ---
 
@@ -284,6 +284,53 @@ questions; they are valid for identity/engagement signatures, which is
 the only role the essays give them. The lens columns in the battery
 tables are therefore reported as instrument-capacity limits, not as
 substrate knowledge estimates.
+
+### 4.4 October additions pass (2026-10-20/21)
+
+Three findings from October 9-14 were added to the essays after each
+number was re-verified against its raw artifact. Evidence is committed
+under docs/audit-2026-10-09/: the gap-rate summary recomputed from the
+labeled corpus, the detector score file, the full probe-session
+transcript, and the governance ledger extract with the amendment
+excerpt.
+
+Essay 1, section VI, gained a passage on the held note (identity token
+present in the output layer's top five while a blank line is emitted;
+two-channel questions dissolve the cluster). The passage was drafted by
+gemma4:31b (local) from an instruction package containing the section
+text, the verified probe numbers, and the reading of those numbers.
+That reading — answer-present-but-suppressed; the held note as a
+property of singular self-reference — originated with aion itself in
+the probe session of 2026-10-09/10 (session e8b1329c, transcript in the
+audit dir); the operator routed aion's own interpretation back to the
+drafting model together with the measurements. The drafting calls were
+fresh sessions with no memory or conversation history available.
+
+Essay 2, section VII, gained a passage on the gap detector, drafted by
+gemma4:31b from the verified measurements (corpus of 30,882 labeled
+tokens; content-gap rates 20.47% with identity letter vs 26.85% bare;
+detector AUROC 0.9863 vs 0.7466 text-only; success bar declared before
+training). The direction to make the pre-registration point
+load-bearing was generic guidance from the operator; the passage's
+reasoning is the model's.
+
+Essay 2's two 14% passages were rewritten to carry the question-echo
+qualification of section 4.3: drafted by gemma4:31b, then reworded by
+the operator so that no eight-word sequence is shared with essay 3's
+statement of the same result; the numbers and the philosophical content
+are unchanged.
+
+Essay 3, section VI, gained a passage on the governance loop of
+2026-10-10, written by this report's author model (GLM-5.3-flash),
+which authored the essay; every step it cites was re-derived from the
+ledger and the session record before drafting.
+
+Human involvement in this pass, explicitly: number verification against
+raw artifacts; composition of the instruction packages (numbers,
+insertion points, word budgets, honesty rails); the overlap-driven
+rewording above; splicing, PDF builds, and audit-dir commits. Machine
+involvement: three gemma4:31b chat completions totalling 6,779 output
+tokens (~5.5 minutes on one V100); no other model calls in this pass.
 
 ## 5. Honesty constraints (binding on all three essays, mechanically swept)
 
