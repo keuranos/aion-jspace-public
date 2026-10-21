@@ -1,0 +1,53 @@
+{
+ "source": "gap_corpus_clean_20260926.jsonl (30,882 labeled tokens)",
+ "label_meaning": "1 = content gap",
+ "per_condition": {
+  "bare": {
+   "gaps": 4264,
+   "total": 15882,
+   "rate_pct": 26.85
+  },
+  "identity": {
+   "gaps": 3071,
+   "total": 15000,
+   "rate_pct": 20.47
+  }
+ },
+ "per_bucket": {
+  "bare": {
+   "step<10": {
+    "gaps": 352,
+    "total": 1330,
+    "rate_pct": 26.5
+   },
+   "10-59": {
+    "gaps": 1798,
+    "total": 6650,
+    "rate_pct": 27.0
+   },
+   "60plus": {
+    "gaps": 2114,
+    "total": 7902,
+    "rate_pct": 26.8
+   }
+  },
+  "identity": {
+   "step<10": {
+    "gaps": 100,
+    "total": 1250,
+    "rate_pct": 8.0
+   },
+   "10-59": {
+    "gaps": 885,
+    "total": 6250,
+    "rate_pct": 14.2
+   },
+   "60plus": {
+    "gaps": 2086,
+    "total": 7500,
+    "rate_pct": 27.8
+   }
+  }
+ },
+ "relative_reduction_pct": 23.7
+}

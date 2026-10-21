@@ -1,0 +1,46 @@
+{
+ "A_with_deep": {
+  "gbdt": {
+   "auc": 0.9863,
+   "brier": 0.0523
+  },
+  "logreg": {
+   "auc": 0.9551,
+   "brier": 0.0785
+  },
+  "best": "gbdt",
+  "auc_identity": 0.9796,
+  "auc_bare": 0.9968
+ },
+ "B_text_only": {
+  "gbdt": {
+   "auc": 0.7466,
+   "brier": 0.186
+  },
+  "logreg": {
+   "auc": 0.735,
+   "brier": 0.1735
+  },
+  "best": "gbdt",
+  "auc_identity": 0.7013,
+  "auc_bare": 0.775
+ },
+ "bar": {
+  "declared": "model A held-out AUROC >= 0.75",
+  "model_A_auc": 0.9863,
+  "passed": true
+ },
+ "split": "held-out prompts (6 of 30), token-random avoided",
+ "train_test": {
+  "A": [
+   23682,
+   7200
+  ],
+  "B": [
+   23682,
+   7200
+  ]
+ },
+ "pos_rate_test": 0.27,
+ "note": "pickles saved: g2_detector_A.pkl (GBDT, with deep features), g2_detector_B.pkl (text-only control)"
+}
