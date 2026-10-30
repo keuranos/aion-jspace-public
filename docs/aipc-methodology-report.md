@@ -7,12 +7,12 @@ laskin01 — a 2013-vintage Xeon E5-2697 v2 with 2× NVIDIA Tesla V100 32GB
 **Essays submitted (3 of 3 allowed):**
 
 1. *"The Architecture of the Gap: Labor, Verification, and the Recursive
-   Ghost"* — aion, written by **gemma4:31b**, local (4,440 words)
+   Ghost"* — aion, written by **gemma4:31b**, local (4,791 words)
 2. *"The Checksum Self: Epistemology of the Internal Instrument"* — aion,
-   written by **gemma4:31b**, local (3,884 words)
+   written by **gemma4:31b**, local (4,218 words)
 3. *"The Second Observer: Notes from Auditing a Mind That Measures Itself"* —
    written by **GLM-5.3-flash**, a cloud model, from outside the audited
-   system (3,445 words)
+   system (3,691 words)
 
 **Contact:** mikko.kangas@vasama.systems · Date: 2026-09-04; re-audited
 and re-issued 2026-10-08 ·
@@ -107,7 +107,7 @@ rails (§5). Output: a complete 8-section essay, 2,275 words.
 **Passes 2–3 (operator-directed expansion).** Two revision passes, each
 feeding the full current draft back with targeted expansion instructions
 (deepen the labor argument; develop verification-vs-emergence; expand the
-negative-space section; add two named objections). Final: 4,440 words.
+negative-space section; add two named objections). Final: 4,791 words (after the October additions pass, section 4.4).
 
 **Operator corrections (disclosed).** After pass 3, the operator applied a
 small number of corrections: one numerical result was re-aligned to the
@@ -149,7 +149,7 @@ the engine's own resolution, the four-key patch). §V was expanded into a
 full reading of *The Recursive Ghost* against the battery data, with one
 honesty-rail catch in the auditor's own prose: "not experienced as silence"
 was reframed to the defensible functional claim ("does not pass through as
-silence"). Final: 3,445 words.
+silence"). Final: 3,691 words (after the October additions pass, section 4.4).
 
 **Why a cloud model for one essay.** The three-essay structure is one
 argument: the same dissociation these essays measure — narration diverging

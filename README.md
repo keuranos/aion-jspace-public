@@ -4,6 +4,8 @@
 > `docs/aipc-essay2-v6-gemma-fresh.md`, `docs/aipc-essay3-jeeves-second-observer.md`,
 > and `docs/aipc-methodology-report.md`. All essay numbers are re-derivable from
 > `data/p3/` with `code/p3_harness.py` (audit trail: `docs/aipc-essay1-v3-audit.md`).
+> Compiled PDFs: release [`aipc-2026-entry`](https://github.com/keuranos/aion-jspace-public/releases/tag/aipc-2026-entry)
+> (three anonymized essay PDFs + methodology report).
 
 
 This repository contains the code, data pointers, and experimental artifacts for:
