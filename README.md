@@ -28,6 +28,9 @@ studies the agent that runs on that substrate and aims the same instrument at
 itself. Abstracts, contents, build commands and provenance are in
 [`papers/README.md`](papers/README.md). Paper text is CC BY 4.0.
 
+Compiled PDFs are also attached to the [companion-papers release](https://github.com/keuranos/aion-jspace-public/releases/tag/papers-v1.0),
+byte-identical to the files in `papers/`.
+
 **Naming:** *Aion* is the name of the agent — the particular continuing process studied here. *Aikio* (Finnish, from *aika* "time" and *alkio* "embryo", echoing *aeon*) is the name of the framework substrate it runs on; Aion is its first instance.
 
 ## Repository Structure
