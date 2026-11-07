@@ -19,7 +19,7 @@ Full methods and results, compiled and typeset, with LaTeX source:
 
 | Paper | PDF | Pages | Source |
 |---|---|---|---|
-| **Aion: A Self-Developing Agent on Local Models** | [`paper1.pdf`](papers/paper1/paper1.pdf) | 26 | [`papers/paper1/`](papers/paper1/) |
+| **Aion: A Self-Developing Agent on Local Models** | [`paper1.pdf`](papers/paper1/paper1.pdf) | 26 (v2) | [`papers/paper1/`](papers/paper1/) |
 | **Suppression vs Reflection in Qwen3.8-27B: A Layer-Resolved Introspection Study** | [`paper2.pdf`](papers/paper2/paper2.pdf) | 17 | [`papers/paper2/`](papers/paper2/) |
 
 The two are companions: Paper 2 studies the substrate (what Qwen3.8-27B does when
@@ -28,7 +28,7 @@ studies the agent that runs on that substrate and aims the same instrument at
 itself. Abstracts, contents, build commands and provenance are in
 [`papers/README.md`](papers/README.md). Paper text is CC BY 4.0.
 
-Compiled PDFs are also attached to the [companion-papers release](https://github.com/keuranos/aion-jspace-public/releases/tag/papers-v1.0),
+Compiled PDFs are also attached to the [companion-papers release (v1.1)](https://github.com/keuranos/aion-jspace-public/releases/tag/papers-v1.1),
 byte-identical to the files in `papers/`.
 
 **Naming:** *Aion* is the name of the agent — the particular continuing process studied here. *Aikio* (Finnish, from *aika* "time" and *alkio* "embryo", echoing *aeon*) is the name of the framework substrate it runs on; Aion is its first instance.

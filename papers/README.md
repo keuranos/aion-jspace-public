@@ -17,9 +17,9 @@ and the operator.
 
 Author: Mikko Kangas (Vasama Systems), `mikko@vasama.systems`.
 
-Both PDFs are also attached to the [papers-v1.0 release](../../releases/tag/papers-v1.0),
-byte-identical to the files here (they are the same typesetting run that produced
-the arXiv packages).
+Both PDFs are also attached to the [papers-v1.1 release](../../releases/tag/papers-v1.1),
+byte-identical to the files here: they are the same typesetting run that produced
+the arXiv packages.
 
 ## Paper 1 — Aion: A Self-Developing Agent on Local Models
 
