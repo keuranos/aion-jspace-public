@@ -7,6 +7,8 @@
 > Compiled PDFs: release [`aipc-2026-entry`](https://github.com/keuranos/aion-jspace-public/releases/tag/aipc-2026-entry)
 > (three anonymized essay PDFs + methodology report).
 
+The agent these papers and essays study — aion — keeps a live public record at <https://aion.vasama.tech>.
+
 
 This repository contains the code, data pointers, and experimental artifacts for:
 
