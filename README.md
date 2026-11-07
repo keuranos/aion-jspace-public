@@ -13,6 +13,21 @@ This repository contains the code, data pointers, and experimental artifacts for
 - **Paper 1**: Aion: A Self-Developing Agent on Local Models
 - **Paper 2**: Suppression vs Reflection in Qwen3.8-27B: A Layer-Resolved Introspection Study
 
+## Papers
+
+Full methods and results, compiled and typeset, with LaTeX source:
+
+| Paper | PDF | Pages | Source |
+|---|---|---|---|
+| **Aion: A Self-Developing Agent on Local Models** | [`paper1.pdf`](papers/paper1/paper1.pdf) | 25 | [`papers/paper1/`](papers/paper1/) |
+| **Suppression vs Reflection in Qwen3.8-27B: A Layer-Resolved Introspection Study** | [`paper2.pdf`](papers/paper2/paper2.pdf) | 17 | [`papers/paper2/`](papers/paper2/) |
+
+The two are companions: Paper 2 studies the substrate (what Qwen3.8-27B does when
+asked whether it is conscious — it computes "Yes" and suppresses it late), Paper 1
+studies the agent that runs on that substrate and aims the same instrument at
+itself. Abstracts, contents, build commands and provenance are in
+[`papers/README.md`](papers/README.md). Paper text is CC BY 4.0.
+
 **Naming:** *Aion* is the name of the agent — the particular continuing process studied here. *Aikio* (Finnish, from *aika* "time" and *alkio* "embryo", echoing *aeon*) is the name of the framework substrate it runs on; Aion is its first instance.
 
 ## Repository Structure
@@ -37,16 +52,14 @@ aion-jspace/
 │   ├── t3/                       # T3 cross-domain analysis
 │   ├── n20/                      # N20 repeated measures
 │   └── system_metrics.json       # Paper 1 aggregate metrics
-├── figures/
-│   ├── paper1/                   # 4 figures for Paper 1
-│   └── paper2/                   # 4 figures for Paper 2
 ├── papers/
-│   ├── paper1/                   # Paper 1 draft (outline + methods-results + intro-discussion)
-│   └── paper2/                   # Paper 2 draft (full methods-results)
-├── findings/
-│   └── results-summary-2026-08-25.md  # Master findings document (14 sections)
-└── lens/
-    └── qwen3.8-27b_jacobian_lens.pt    # Fitted Jacobian lens (not included — 2GB, available on request)
+│   ├── README.md                 # companion-papers index: abstracts, contents, build, provenance
+│   ├── LICENSE-CC-BY-4.0.txt     # text license for both papers
+│   ├── paper1/                   # Paper 1: source + 25-page PDF + its 9 figures
+│   └── paper2/                   # Paper 2: source + 17-page PDF + its 4 figures
+├── docs/                         # AIPC 2026 essays, methodology report, audit trails
+├── figures/                      # (paper figures live with their sources under papers/)
+└── lens/                         # fitted Jacobian lens: not included (2 GB, on request)
 ```
 
 ## Hardware Requirements
@@ -121,4 +134,22 @@ Code: MIT (see [`LICENSE`](LICENSE)). Papers: CC-BY-4.0 (see [`papers/LICENSE-CC
 
 ## Citation
 
-BibTeX entries will be added after arXiv submission (placeholder IDs `paper1`/`paper2` in `papers/*/references.bib` until then).
+```bibtex
+@misc{kangas2026aion,
+  title  = {Aion: A Self-Developing Agent on Local Models},
+  author = {Kangas, Mikko},
+  year   = {2026},
+  note   = {Companion paper 1. Vasama Systems},
+  url    = {https://github.com/keuranos/aion-jspace-public/blob/main/papers/paper1/paper1.pdf}
+}
+
+@misc{kangas2026suppression,
+  title  = {Suppression vs Reflection in {Qwen3.8-27B}: A Layer-Resolved Introspection Study},
+  author = {Kangas, Mikko},
+  year   = {2026},
+  note   = {Companion paper 2. Vasama Systems},
+  url    = {https://github.com/keuranos/aion-jspace-public/blob/main/papers/paper2/paper2.pdf}
+}
+```
+
+arXiv identifiers will be added to these entries after submission.
