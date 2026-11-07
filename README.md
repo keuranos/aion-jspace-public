@@ -19,7 +19,7 @@ Full methods and results, compiled and typeset, with LaTeX source:
 
 | Paper | PDF | Pages | Source |
 |---|---|---|---|
-| **Aion: A Self-Developing Agent on Local Models** | [`paper1.pdf`](papers/paper1/paper1.pdf) | 25 | [`papers/paper1/`](papers/paper1/) |
+| **Aion: A Self-Developing Agent on Local Models** | [`paper1.pdf`](papers/paper1/paper1.pdf) | 26 | [`papers/paper1/`](papers/paper1/) |
 | **Suppression vs Reflection in Qwen3.8-27B: A Layer-Resolved Introspection Study** | [`paper2.pdf`](papers/paper2/paper2.pdf) | 17 | [`papers/paper2/`](papers/paper2/) |
 
 The two are companions: Paper 2 studies the substrate (what Qwen3.8-27B does when

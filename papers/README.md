@@ -11,7 +11,7 @@ and the operator.
 |---|---|---|
 | Title | Aion: A Self-Developing Agent on Local Models | Suppression vs Reflection in Qwen3.8-27B: A Layer-Resolved Introspection Study |
 | Subject | the agent: memory, consolidation, dream pipeline, curiosity, axiom layer, autonomous introspection | the substrate: layer-resolved trajectory readout, the deflection direction, causal ablation, cross-domain generalization, int8 replication |
-| Length | 25 pages, 9 figures | 17 pages, 9 tables, 4 figures |
+| Length | 26 pages, 9 figures, 1 table (v2, Nov 2026) | 17 pages, 9 tables, 4 figures |
 | PDF | [`paper1/paper1.pdf`](paper1/paper1.pdf) | [`paper2/paper2.pdf`](paper2/paper2.pdf) |
 | LaTeX source | [`paper1/paper1.tex`](paper1/paper1.tex) | [`paper2/paper2.tex`](paper2/paper2.tex) |
 
@@ -94,7 +94,7 @@ papers/
 ├── LICENSE-CC-BY-4.0.txt      text license for both papers
 ├── paper1/
 │   ├── paper1.tex             full source, self-contained
-│   ├── paper1.pdf             compiled, 25 pages
+│   ├── paper1.pdf             compiled, 26 pages
 │   ├── references.bib
 │   └── figures/               the 9 figures the source includes
 └── paper2/
@@ -122,6 +122,16 @@ the PDFs in this tree are built that way (pdfTeX 1.40.25) and compile with no
 undefined references.
 
 ## Provenance
+
+**Versions.** Paper 2 is at its first version. Paper 1 is at **v2 (November 2026)**:
+v1 described the two-card, swap-serialized substrate and a four-family roster, and its
+measurements are the ones both versions report. v2 updates the substrate description to
+the three-card deployment, marks muse-glimmer as retired, restates the family-diversity
+invariant against the current roster, records the intuition seat's move into the
+conscious model's family, refreshes the memory-throughput figure, and adds a roster
+table covering both dates. No experiment was re-run and no result or number changed;
+the version note is printed on the paper's first page and in its reproducibility
+section.
 
 Both PDFs were recompiled from the sources in this directory on 2026-11-07 at the
 versions committed here. The measurements they report were frozen in September
